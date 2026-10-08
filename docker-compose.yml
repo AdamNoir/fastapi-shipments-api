@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:18.4
+    container_name: postgres-database
+    restart: unless-stopped
+
+    ports:
+      - "5432:5432"
+
+    environment:
+      POSTGRES_USER: ultimateuser
+      POSTGRES_PASSWORD: db1234
+      POSTGRES_DB: ultimatedatabase
+
+    volumes:
+      - postgres-vol:/var/lib/postgresql
+
+volumes:
+  postgres-vol:

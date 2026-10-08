@@ -1,0 +1,42 @@
+# Python / Virtual Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+!.env.template
+
+# FastAPI / Database / Local Data
+*.db
+*.sqlite3
+*.sqlite
+/data/
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Docker local overrides
+docker-compose.override.yml
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
